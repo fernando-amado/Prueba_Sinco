@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* ESTILOS PRINCIPALES */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+:root {
+    --color-principal: #f4f4f4;
+    --border-input: #AFAFAF;
+    --colorIcono: #5B7288;
+    --blanco: #fff;
+    --colorTitulo: #696969;
+
+}
+
+body {
+    background: var(--color-principal);
+    font-weight: bold;
+}
+
+/* ESTILOS HEADER NAV */
+.cabezeraNav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    box-shadow: 0px 4px 0px 0px #00000026;
+}
+
+header .seccionBusqueda {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+header .seccionAjustes {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1%;
+
+}
+
+.tituloHeaderNav {
+    font-size: 18px;
+    margin: 2%;
+    color: var(--colorTitulo);
+}
+
+.formAgregar {
+    margin: 3%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.inputAgregar {
+    width: 140px;
+    font-size: 12px;
+    border: solid 2px var(--border-input);
+    background-color: var(--blanco);
+    color: #838383;
+    height: 27px;
+    text-align: center;
+
+}
+
+.botonSalir {
+    width: 70px;
+    height: 27px;
+    background-color: var(--colorIcono);
+    font-size: 15px;
+    margin-left: 8%;
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2px;
+    padding: 5px;
+
+}
+
+.iconoSalir {
+    width: 22px;
+}
+
+.iconosNav {
+    margin-left: 2%;
+}
+
+.contenedorTodo {
+    display: flex;
+}
+
+/* CONTENEDOR NAV INFORMACION */
+.navInformacion {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: .5%;
+}
+
+.contendorImagen {
+    position: relative;
+    top: 20px;
+    width: 45%;
+    height: 86px;
+    background-color: var(--blanco);
+    border-radius: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--color-principal);
+}
+
+.contenedorPanel {
+    width: 85%;
+    background-color: var(--blanco);
+    border-radius: 5px;
+    box-shadow: 0px 4px 11px 0px #0000001A;
+    height: 470px;
+
+}
+
+.informacionPersonal {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nombreUsuario {
+    margin-top: 24px;
+    font-size: 1.2vw;
+    color: var(--colorTitulo);
+}
+
+.informacionAdicional {
+    margin: 11px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid #EDEDED;
+}
+
+.informacionAdicional span {
+    font-size: .8vw;
+    color: #969696;
+    margin-top: 3px;
+    font-weight: normal;
+}
+
+.opcionesPanel {
+
+    width: 100%;
+    height: 265px;
+
+    margin: 7px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.contenedorOpcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.contenedorOpcion span {
+    font-size: 0.8vw;
+    font-weight: medium;
+    text-align: center;
+    width: 65%;
+    color: #7C7C7C;
+}
+.contenedorOpcion span:hover{
+    color: #36A792;
+}
+.contenedorOpcion svg {
+    width: 80%;
+    height: 35px;
+}
+.cambiarColor path{
+    fill:#5B7288 ;
+}
+.cambiarColor  path:hover  {
+    fill:#36A792;
+}
+
+/* CONTENEDOR DE DATOS LADO DERECHO */
+/* HEADER */
+.contenedorPrincipal {
+    width: 83.5%;
+    height: auto;
+    background-color: var(--blanco);
+    margin-top: 25px;
+    box-shadow: 0px 4px 11px 0px #0000001A;
+    border-radius: 5px;
+}
+
+.headerMain {
+    width: 100%;
+    height: 82px;
+    border-bottom: 2px solid #1B344C;
+
+}
+
+.contenedorIconoHeader,
+.textoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedorIconoHeader {
+    margin-top: 5px;
+}
+
+.contenedorTexto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.contenedorTexto span {
+    margin: 0 10%;
+    font-size: 0.8vw;
+    text-align: center;
+    width: 10%;
+
+
+}
+
+.linea {
+    width: 27%;
+    position: relative;
+    height: 2px;
+    background-color: #A9A9A9;
+}
+
+.pendientes {
+    color: #F18C78;
+}
+
+.asignados {
+    color: #A9A9A9;
+}
+
+/* CONTENEDOR DE DATOS */
+
+.headerAside {
+    display: flex;
+    justify-content: space-between;
+    width: 97.5%;
+
+}
+
+.tituloElementos {
+    color: var(--colorTitulo);
+    font-size: 1.2vw;
+    margin: 20px 1%;
+}
+
+.mensajeAsignar span {
+    position: relative;
+    left: 6%;
+    bottom: 37px;
+    font-size: 10px;
+    color: var(--blanco);
+}
+
+.mensajeAsignar .contenedorMensaje {
+    position: relative;
+    left: 53%;
+    bottom: 15px;
+}
+
+.iconoAsignar {
+    margin-top: 0;
+}
+
+
+.seccionFormularioTabla {
+    width: 97%;
+    margin: 5px 1%;
+    background-color: #f6f6f6;
+    display: flex;
+margin-bottom: 20px;
+    box-shadow: 0px 4px 5px 0px #00000030;
+    border-radius: 5px;
+    height: 80px;
+}
+
+.cuadroTabla {
+    border-right: 1px solid #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 25px;
+}
+
+.cuadroTabla li {
+    font-size: 10px;
+    color: #848484;
+    margin-left: 0%;
+    width: 120%;
+}
+
+.cuadroTabla .primerLi {
+    color: #5B5B5B;
+}
+
+.cuadroTabla .tercerLi {
+    font-weight: normal;
+}
+
+.cuadroTabla label {
+    color: #5B5B5B;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.cuadroTabla select,
+input {
+    border: 1px solid #848484;
+    color: var(--colorTitulo);
+    font-size: 10px;
+    font-weight: normal;
+    padding: 4px;
+}
+
+.ultimo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0%;
+    border-right: none;
+    justify-content: space-around;
+    padding: 0;
+    width: 40%;
+}
+
+.ultimo textarea {
+    padding: 7px;
+    border: 1px solid #848484;
+    color: #BBBBBB;
+    font-size: 10px;
+    font-weight: normal;
+    height: 40px;
+    width: 40%;
+    background-color: var(--blanco);
+}
+
+.iconoAdjuntar {
+    width: 12px;
+    height: 25px;
+    margin-left: 0%;
+}
+
+.botonCompletar {
+    width: 125px;
+    background: #36A792;
+    height: 26px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: var(--blanco);
+    margin-left: 5%;
+
+}
+
+
+
+@media (max-width: 1000px) {
+    .tituloHeaderNav {
+        font-size: 1.7vw;
+        margin: 2%;
+        color: #696969;
+    }
+
+    .seccionFormularioTabla {
+        display: flex;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 670px) {
+    header .seccionBusqueda {
+
+        width: 70%;
+    }
+
+    header .seccionAjustes {
+        width: 30%;
+
+        padding: 0 1%;
+    }
+
+    .botonSalir {
+        width: 50%;
+        font-size: 1.5vw;
+        margin-left: 8%;
+
+        padding: 5px;
+    }
+
+    .inputAgregar {
+        width: 50%;
+        font-size: 1.5vw;
+    }
+
+    .iconosNav {
+        width: 15%;
+    }
+
+    .iconoAsignar {
+        margin-top: -5%;
+        float: right;
+    }
+
+    .tituloElementos {
+        color: var(--colorTitulo);
+        font-size: 1.9vw;
+        margin: 20px 1%;
+    }
+
+    .navInformacion {
+        display: none;
+    }
+
+    .contenedorPrincipal {
+        width: 90%;
+    }
+
+    .contenedorTodo {
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .contenedorMensaje {
+        display: none;
+    } */
+
+
+}
